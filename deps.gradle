@@ -1,0 +1,29 @@
+// versions
+ext {
+    def versions = [
+            appCompat    : "1.1.0",
+            coroutines   : "1.3.9",
+            junit        : "4.12",
+            kotlin       : "1.4.0",
+            koin         : "2.1.6",
+            ktx          : "1.3.0",
+            viewmodelKtx : "2.1.0-beta01"
+    ]
+
+    coreDependencies = [
+            appCompat          : "androidx.appcompat:appcompat:${versions.appCompat}",
+            coroutines         : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}",
+            coroutines_android : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}",
+            kotlin_stdlib      : "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
+            koin_android       : "org.koin:koin-android:${versions.koin}",
+            koin_viewmodel     : "org.koin:koin-androidx-viewmodel:${versions.koin}",
+            koin_scope         : "org.koin:koin-androidx-scope:${versions.koin}",
+            ktx                : "androidx.core:core-ktx:${versions.ktx}",
+            viewmodelKtx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.viewmodelKtx}"
+    ]
+
+    testDependencies = [
+            coroutines : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutines}",
+            junit      : "junit:junit:${versions.junit}"
+    ]
+}
